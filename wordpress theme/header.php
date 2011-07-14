@@ -23,9 +23,16 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Wire One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/jquery.fittext.js"></script>
+<?php
+	//wp_enqueue_script('jquery.fittext.js',get_bloginfo('template_directory') . '/js/jquery.fittext.js', array('jquery'),'1.0',true);
+?>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -53,6 +60,8 @@
 	if( is_page("Home") ) {
 ?>
 <script type="text/javascript">
+	var browserHeight = $(window).height();
+	$('body').height(browserHeight + 100);
 	$('body').addClass('js');
 	
 	$(document).ready(function() {
@@ -87,10 +96,4 @@
 		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 	</div><!-- #access -->
-	
-	<!-- script will replace Home in menu with image
-	<script type="text/javascript">
-		$('div.menu ul li:first-child a').html('<img id="menu_logo" src="<?php echo get_bloginfo('template_directory');?>/images/logo_basic.png" />');
-	</script>
-	-->
 </header>

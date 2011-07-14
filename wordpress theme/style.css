@@ -1,4 +1,5 @@
-/* @override http://localhost/designliftoff/wp-content/themes/designliftoff_2/style.css */
+/* @override http://localhost/designliftoff/wp-content/themes/designliftoff_2/style.css
+	http://the-17.local/designliftoff/wp-content/themes/designliftoff/style.css */
 
 /*
 Theme Name: Design Lift-Off
@@ -19,14 +20,8 @@ html {
 }
 
 body {
-	background: url('images/bg_dottedlinerocket.png') no-repeat;
-	background-position: center 195px;
-	font-family: sans-serif;
-
-}
-
-p {
-	
+	font-family: "Helvetica Neue", "Helvetica", "Calibri", sans-serif;
+	line-height: 1.25em;
 }
 
 a {
@@ -42,6 +37,10 @@ footer,
 #body_wrapper {
 	width: 960px;
 	margin: 0 auto;
+}
+
+section {
+	clear: both;
 }
 
 body.js header,
@@ -98,16 +97,38 @@ div.menu ul li {
 	border-bottom: #000 solid 1px;
 }
 
+div.menu ul li:first-child {
+	border-left: #000 solid 1px;
+
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+div.menu ul li:last-child{
+	border-right: #000 solid 1px;
+
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
 div.menu ul li a {
+	line-height: 1em;
 	display:block;
 	padding:.8em 1em .6em 1em;
 	color:#999;
 	text-decoration:none;
-	line-height:1em;
-	font-size: 1.3em;
-	font-family: 'Josefin Sans', sans-serif;	
+	font-size: 1.4em;
+	font-family: 'Josefin Sans', "Helvetica Neue", "Helvetica", "Calibri", sans-serif;	
 	text-transform: uppercase;
-	
+
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
@@ -124,16 +145,6 @@ div.menu ul li a.active:hover {
    color:#fff;
 }
 
-div.menu ul li:first-child {
-	border-left: #000 solid 1px;
-
-	-moz-border-radius-topleft: 10px;
-	-moz-border-radius-bottomleft:10px;
-	-webkit-border-top-left-radius:10px;
-	-webkit-border-bottom-left-radius:10px;
-	border-top-left-radius:10px;
-	border-bottom-left-radius:10px;
-}
 
 div.menu ul li:first-child a {
 	background: url(images/logo_menu.png) no-repeat 50%;
@@ -153,16 +164,7 @@ div.menu ul li:first-child a:hover {
 	opacity: 1.0;
 }
 
-div.menu ul li:last-child{
-	border-right: #000 solid 1px;
 
-	-moz-border-radius-topright: 10px;
-	-moz-border-radius-bottomright:10px;
-	-webkit-border-top-right-radius:10px;
-	-webkit-border-bottom-right-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-right-radius:10px;
-}
 
 a#access_skip_link {
 	display: none;
@@ -201,4 +203,167 @@ h1#mainLogo a img {
 h1#mainLogo span,
 header p {
 	display: none;
+}
+
+#body_wrapper {
+	background: url('images/bg_dottedlinerocket.png') no-repeat 100% 300px;
+	color: #FFF;
+	margin-top: 130px;
+}
+
+p.comments_closed {
+	display: none;
+}
+
+section#content {		
+		background: rgb(0, 0, 0); /* The Fallback */
+		background: rgba(0, 0, 0, 0.3);
+		border: #000 solid 1px;
+
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft:10px;
+		-webkit-border-top-left-radius:10px;
+		-webkit-border-bottom-left-radius:10px;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright:10px;
+		-webkit-border-top-right-radius:10px;
+		-webkit-border-bottom-right-radius:10px;
+		border-top-right-radius:10px;
+		border-bottom-right-radius:10px;
+}
+
+section#content article {
+	color: #333;
+	padding: 10px;
+	margin: 15px;
+			
+	background: #FFF; /* The Fallback */
+	background: rgba(255,255,255,0.7); /* The Fallback */
+	border: #000 solid 1px;
+
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-bottomleft:7px;
+	-webkit-border-top-left-radius:7px;
+	-webkit-border-bottom-left-radius:7px;
+	border-top-left-radius:7px;
+	border-bottom-left-radius:7px;
+
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright:7px;
+	-webkit-border-top-right-radius:7px;
+	-webkit-border-bottom-right-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
+}
+
+section#content article a {
+	color: #000;
+}
+
+#about p,
+div.process_header p {
+	font-weight: lighter;
+	line-height: 1.5em;
+	font-style: italic;
+}
+
+#welcome {
+	position: relative;
+	margin: 200px auto 50px auto;
+}
+
+#welcome img {
+	position: absolute;
+	top: -210px;
+	left: 280px;
+	width: 400px;
+}
+
+#welcome h2 {
+	font-family: "Wire One","Helvetica Neue", "Helvetica", "Calibri", sans-serif;
+	text-align: center;
+	margin: 250px auto 100px auto;
+	width: 960px;
+	padding: 0;
+	font-size: 20em;
+}
+
+#welcome p {
+	width: 600px;
+	font-style: italic;
+}
+
+section#process {
+	margin: 50px auto;
+}
+
+section#process li {
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	text-align: left;
+	margin: 0 15px;
+}
+
+section#process li:first-child {
+	margin: 0 15px 0 0;
+}
+
+section#process li:last-child {
+	margin: 0 0 0 15px;
+}
+
+.section_header h2 {
+	font-family: 'Josefin Sans', "Helvetica Neue", "Helvetica", "Calibri", sans-serif;
+	font-size: 2.5em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.section_header p {
+	font-style: italic;
+}
+
+section#process h3 {
+	font-family: 'Josefin Sans', "Helvetica Neue", "Helvetica", "Calibri", sans-serif;	
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+div.section_header {
+	margin: 0 0 10px 0;
+}
+
+div.section_body p {
+	font-size: .9em;
+	line-height: 1.4em;
+	font-weight: lighter;
+}
+
+section.section_box {
+	text-align: center;
+	padding: 20px;
+	background: #000; /* The Fallback */
+	background: rgba(0, 0, 0, 0.3);
+	border: #000 solid 1px;
+
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+#about p img {
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+li.process_step img {
+	width: 120px;
+	margin: 0 auto;
+	display: block;
 }

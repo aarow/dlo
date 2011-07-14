@@ -2,24 +2,29 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the id=main div and all content
- * after.  Calls sidebar-footer.php for bottom widgets.
- *
  * @package WordPress
  * @subpackage Starkers
- * @since Starkers 3.0
+ * @since Starkers HTML5 3.0
  */
 ?>
 
-<footer>
+	<footer>
+
 <?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
 	get_sidebar( 'footer' );
 ?>
 
-			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+		<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<?php bloginfo( 'name' ); ?>
+		</a>
+
+		<?php do_action( 'starkers_credits' ); ?>
+		
+		<a href="<?php echo esc_url( __('http://wordpress.org/', 'starkers') ); ?>" title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'starkers'); ?>" rel="generator"> 
+			<?php printf( __('Proudly powered by %s.', 'starkers'), 'WordPress' ); ?>
+		</a>
+
+	</footer>
 
 <?php
 	/* Always have wp_footer() just before the closing </body>
@@ -29,7 +34,5 @@
 
 	wp_footer();
 ?>
-</footer>
-
 </body>
 </html>

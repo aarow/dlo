@@ -4,11 +4,12 @@
  *
  * @package WordPress
  * @subpackage Starkers
- * @since Starkers 3.0
+ * @since Starkers HTML5 3.0
  */
 ?>
 
-			<ul class="xoxo">
+	<aside>
+		<ul>
 
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
@@ -23,14 +24,14 @@
 			</li>
 
 			<li>
-				<h3><?php _e( 'Archives', 'twentyten' ); ?></h3>
+				<h3><?php _e( 'Archives', 'starkers' ); ?></h3>
 				<ul>
 					<?php wp_get_archives( 'type=monthly' ); ?>
 				</ul>
 			</li>
 
 			<li>
-				<h3><?php _e( 'Meta', 'twentyten' ); ?></h3>
+				<h3><?php _e( 'Meta', 'starkers' ); ?></h3>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>
@@ -39,14 +40,16 @@
 			</li>
 
 		<?php endif; // end primary widget area ?>
-			</ul>
+		</ul>
 
 <?php
 	// A second sidebar for widgets, just because.
 	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
 
-			<ul class="xoxo">
+			<ul>
 				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</ul>
 
 <?php endif; ?>
+	
+	</aside>

@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Starkers
- * @since Starkers 3.0
+ * @since Starkers HTML5 3.0
  */
 ?>
 
@@ -24,25 +24,25 @@
 ?>
 
 <?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
-					<ul class="xoxo">
-						<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
-					</ul>
+		<ul>
+			<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+		</ul>
 <?php endif; ?>
 
 <?php if ( is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
-					<ul class="xoxo">
-						<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
-					</ul>
+		<ul>
+			<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
+		</ul>
 <?php endif; ?>
 
 <?php if ( is_active_sidebar( 'third-footer-widget-area' ) ) : ?>
-					<ul class="xoxo">
-						<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
-					</ul>
+		<ul>
+			<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
+		</ul>
 <?php endif; ?>
 
 <?php if ( is_active_sidebar( 'fourth-footer-widget-area' ) ) : ?>
-					<ul class="xoxo">
-						<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
-					</ul>
+		<ul>
+			<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
+		</ul>
 <?php endif; ?>
