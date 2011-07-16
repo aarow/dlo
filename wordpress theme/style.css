@@ -206,7 +206,7 @@ header p {
 }
 
 #body_wrapper {
-	background: url('images/bg_dottedlinerocket.png') no-repeat 100% 300px;
+	background: url('images/bg_dottedlinerocket.png') no-repeat 100% 450px;
 	color: #FFF;
 	margin-top: 130px;
 }
@@ -275,11 +275,18 @@ div.process_header p {
 	margin: 200px auto 50px auto;
 }
 
+#welcome:after {
+	content: "";
+	clear: both;
+	margin: 100px;
+}
+
 #welcome img {
 	position: absolute;
 	top: -210px;
 	left: 280px;
 	width: 400px;
+	z-index: -1;
 }
 
 #welcome h2 {
@@ -289,11 +296,44 @@ div.process_header p {
 	width: 960px;
 	padding: 0;
 	font-size: 20em;
+	*line-height: 1em;
 }
 
 #welcome p {
+	margin: 30px 100px 0 21px;
 	width: 600px;
-	font-style: italic;
+	font-size: 1.3em;
+	line-height: 1.5em;
+	font-weight: lighter;
+	color: #999;
+	display: block;
+	float: left;
+}
+
+#welcome p em {
+	font-weight: bolder;
+	color: #FFF;
+	font-size: 1.1em;
+}
+
+a#btn_process {
+	display: inline-block;
+	background: url(images/btn_launch.jpg) no-repeat bottom;
+	background-position: bottom left;
+	width: 190px;
+	height: 220px;
+	text-align: center;
+	font-size: 1.5em;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a#btn_process:hover {
+	background-position: bottom center;
+}
+
+a#btn_process:active {
+	background-position: bottom right;
 }
 
 section#process {
@@ -306,6 +346,10 @@ section#process li {
 	vertical-align: top;
 	text-align: left;
 	margin: 0 15px;
+	
+	*display: inline;
+	*width: 190px;
+	zoom: 1;
 }
 
 section#process li:first-child {

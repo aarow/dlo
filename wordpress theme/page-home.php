@@ -23,12 +23,13 @@ get_header(); ?>
 	</script>
 	<img src="<?php echo get_bloginfo('template_directory');?>/images/fig_welcome.png" alt="" />
 	<p><em>Design Lift-Off</em> is just a fancy store front for my design services. My name is <em>Aaron Neville</em> and I produce web sites and graphics. Yah, I know that the rocket analogy is a little corny, but all business analogies are. Besides, rockets are cool.</p>
+	<a href="#process" title="Process" class="localLink" id="btn_process">See the Process</a>
 </section>
 
-<section id="about" class="section_box">
+<section id="work" class="section_box">
 	<div class="section_header">
-		<h2>Our Work</h2>
-		<p>We strive to build quality designs</p>
+		<h2>Work</h2>
+		<p>Striving to build quality designs</p>
 	</div>
 	
 	<div class="section_body">
@@ -38,8 +39,8 @@ get_header(); ?>
 
 <section id="process" class="section_box">
 	<div class="section_header">
-		<h2>Our Process</h2>
-		<p>Standard outline for our web design process</p>
+		<h2>Process</h2>
+		<p>Standard outline for the web design process</p>
 	</div>
 	<div class="section_body">
 		<ul>
@@ -69,6 +70,5 @@ get_header(); ?>
 </section>
 
 </section><!-- end body_wrapper -->
-
 
 <?php get_footer(); ?>

@@ -30,6 +30,10 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/jquery.fittext.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/modernizr.dev.js"></script>
+<![endif]-->
 <?php
 	//wp_enqueue_script('jquery.fittext.js',get_bloginfo('template_directory') . '/js/jquery.fittext.js', array('jquery'),'1.0',true);
 ?>
