@@ -35,11 +35,6 @@
 	wp_footer();
 ?>
 
-<!--
-<script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/jquery.localscroll-1.2.7-min.js"></script>
--->
-
 <script type="text/javascript">
 	//$.localScroll();
 $("a.localLink").click(function(event){
